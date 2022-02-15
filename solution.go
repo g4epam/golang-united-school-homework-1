@@ -1,9 +1,12 @@
 package solution
 
 import (
+	"fmt"
 	"github.com/kyokomi/emoji/v2"
 )
 
 func GetMessage() string {
-	return emoji.Sprint("Hello :book:!")
+	book := emoji.Sprint("Hello :book:!")
+	fmt.Println(book)
+	return book
 }
